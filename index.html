@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloudy Café</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    /* Custom styles */
+    body {
+      background-color: #879bb1; /* Slightly brown background */
+    }
+    .mainsec {
+      background-image: url('coffee.webp');
+      background-size: cover;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 100px 0;
+    }
+    .mainsec h1 {
+      font-size: 4rem;
+    }
+    .menu-item {
+      text-align: center;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Cloudy Café</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- mainsec Section -->
+  <div class="mainsec">
+    <h1>Welcome to Cloudy Café</h1>
+    <p>Fluffy, light, and dreamy drinks and treats</p>
+    <a href="#menu" class="btn btn-primary btn-lg">Explore Our Menu</a>
+  </div>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2>About Cloudy Café</h2>
+      <img src="coffee.webp" alt="Coffee" class="img-fluid mb-3" style="max-width: 200px;"> <!-- Image added here -->
+      <p class="lead">At Cloudy Café, we believe in creating drinks and treats as light and fluffy as the clouds. Our café was born out of a love for daydreaming and a passion for high-quality coffee.</p>
+      <p>Come and enjoy the unique atmosphere where every bite and sip feels like you're on cloud nine!</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Our Menu</h2>
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <h4>Cloud Coffee</h4>
+          <p>A fluffy, light espresso with cloud-shaped foam.</p>
+        </div>
+        <div class="col-md-4 menu-item">
+          <h4>Cloud Latte</h4>
+          <p>Our signature latte topped with a cloud of whipped cream.</p>
+        </div>
+        <div class="col-md-4 menu-item">
+          <h4>Cloud Macarons</h4>
+          <p>Delicate macarons in light, fluffy flavors like vanilla and lavender.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Find Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Our Main Location</h4>
+          <p>123 Cloud St., Dreamland</p>
+        </div>
+        <div class="col-md-6">
+          <!-- Embedded Google Map -->
+          <iframe src="https://maps.google.com/maps?q=123%20Cloud%20St&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <div class="form-group mb-3">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group mb-3">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group mb-3">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Cloudy Café. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
